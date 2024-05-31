@@ -76,7 +76,7 @@ listboxt["yscrollcommand"] = scrollbar.set
 def addDot():
     global dots, c, entryx, entryy
     c += 1
-    dots.append([int(entryx.get()), int(entryy.get())])
+    dots.append([float(entryx.get()), float(entryy.get())])
     strdots.append("Точка №{:1} : {:2}, {:3}".format(c, dots[-1][0], dots[-1][1]))
     labelc["text"] = "Количество точек : " + str(c)
 
